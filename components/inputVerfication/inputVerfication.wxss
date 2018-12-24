@@ -1,0 +1,41 @@
+.continuous-input-wrap {
+  position: relative;
+  font-size: 0;
+}
+
+.real-input {
+  width: 0;
+  height: 0;
+  min-height: 0;
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 100rpx;
+}
+
+.fake-input-wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.fake-input {
+  display: block;
+  width: 110rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  border-right: 2rpx solid #ddd;
+}
+
+.fake-input:first-child {
+  border-left: 2rpx solid #ddd;
+}
+
+.black-point {
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  background: black;
+  border-radius: 50%;
+}

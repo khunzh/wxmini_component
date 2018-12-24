@@ -1,0 +1,2 @@
+<input-verfication focus="{{focus}}" fake-input-external-class="fake-input-external-class" binddone="done"></input-verfication>
+<view style='margin-top: 20rpx; text-align: center'>输入完后显示并隐藏键盘:{{code}}</view>

@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+   <navigator url="{{examples.inputVerfication}}">支付密码/验证码连续输入框</navigator>
+</view>

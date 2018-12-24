@@ -1,0 +1,22 @@
+<!-- 连续输入的验证输入框(类似支付宝/微信密码支付) -->
+<view class='input-verfication-wrap'>
+  <input class="real-input"
+              value="{{value}}"
+              type="number"
+              maxlength="{{maxlength}}"
+              cursor-spacing="{{cursorSpacing}}"
+              focus="{{focus}}"
+              bindinput="_input"
+              bindfocus="_focus"
+              bindblur="_blur" />
+  <view class='fake-input-wrap fake-input-wrap-external-class'>
+    <view wx:for="{{maxlength}}" wx:key="{{item}}" class="fake-input fake-input-external-class">
+      <block wx:if="{{value.length-1 >= item}}">
+        <view wx:if="{{type === 'plaintext'}}"
+              class="">{{value[item]}}</view>
+        <view wx:if="{{type === 'password'}}"
+              class="black-point"></view>
+      </block>
+    </view>
+  </view>
+</view>
