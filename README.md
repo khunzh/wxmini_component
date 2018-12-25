@@ -1,7 +1,7 @@
 ## inputVerfication
 类似于支付宝的支付密码输入框, 也可以用于某些验证码的输入
 ### 效果图
-
+![image](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/inputVerfication.gif)
 ### properties
 属性 | 说明 | 类型 | 默认 | 必须
 ---|---|---|---|---
@@ -27,4 +27,5 @@ binddone | 输入完后触发 | e.detail.value携带输入的内容
 ### tips
 1. 键盘不会自动弹出, 需要在父组件中通过设置focus属性实现动态弹出收回
 2. 不足之处请多多提意见
+3. 模拟器上无法输入, 需在真机上调试
 
