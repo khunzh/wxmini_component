@@ -18,4 +18,13 @@ fake-input-wrap-external-class | 包裹框框的外部样式类
 fake-input-external-class | 单个框框外部样式类
 
 ### triggerEvent
+事件 | 说明 | 携带参数
+--- | --- | ---
+bindblur | 同官方input组件 | 同官方
+bindfocus | 同上 |同上
+binddone | 输入完后触发 | e.detail.value携带输入的内容
+
+### tips
+1. 键盘不会自动弹出, 需要在父组件中通过设置focus属性实现动态弹出收回
+2. 不足之处请多多提意见
 
