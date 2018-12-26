@@ -31,7 +31,7 @@ binddone | 输入完后触发 | e.detail.value携带输入的内容
 
 ## inputClear
 带清除按钮的输入框
-###效果图
+### 效果图
 ![inputClear](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/inputClear.gif)
 ### properties
 属性 | 说明 | 类型 | 默认 | 必须
