@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-   <navigator url="{{examples.inputVerfication}}">支付密码/验证码连续输入框</navigator>
+  <navigator class='navigator' url="{{examples.inputVerfication}}">支付密码/验证码连续输入框</navigator>
+  <navigator class='navigator' url="{{examples.inputClear}}">带清除按钮输入框</navigator>
 </view>

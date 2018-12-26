@@ -1,0 +1,30 @@
+<!-- 尾部带清除按钮的input -->
+<view class="input-clear-wrap">
+       <text wx:if="{{beforeInput !== ''}}" class="before-input before-input-external-class">{{beforeInput}}</text>
+       <input class="input input-external-class"
+              value="{{value}}"
+              type="{{type}}"
+              password="{{password}}"
+              placeholder="{{placeholder}}"
+              placeholder-style="{{placeholderStyle}}"
+              placeholder-class="{{placeholderClass}}"
+              disabled="{{disabled}}"
+              maxlength="{{maxlength}}"
+              cursor-spacing="{{cursorSpacing}}"
+              focus="{{focus}}"
+              confirm-type="{{confirmType}}"
+              confirm-hold="{{confirmHold}}"
+              cursor="{{cursor}}"
+              selection-start="{{selectionStart}}"
+              selection-end="{{selectionEnd}}"
+              adjust-position="{{adjustPosition}}"
+              bindinput="_input"
+              bindfocus="_focus"
+              bindblur="_blur"
+              bindconfirm="_confirm" />
+       <view class="clear-btn clear-btn-external-class"
+             catchtap="_clear"
+             hidden="{{hideClearBtn}}">
+             <text class='iconfont icon-clear'></text>
+       </view>
+</view>

@@ -1,7 +1,7 @@
 ## inputVerfication
 类似于支付宝的支付密码输入框, 也可以用于某些验证码的输入
 ### 效果图
-![image](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/inputVerfication.gif)
+![inputVerfication](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/inputVerfication.gif)
 ### properties
 属性 | 说明 | 类型 | 默认 | 必须
 ---|---|---|---|---
@@ -29,3 +29,27 @@ binddone | 输入完后触发 | e.detail.value携带输入的内容
 2. 不足之处请多多提意见
 3. 模拟器上无法输入, 需在真机上调试
 
+## inputClear
+带清除按钮的输入框
+###效果图
+![inputClear](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/inputClear.gif)
+### properties
+属性 | 说明 | 类型 | 默认 | 必须
+---|---|---|---|---
+brforeInput | 在输入框前面插入的内容 | String | '' | 否
+
+tip: 其余属性同官方input组件
+
+### externalClasses
+样式类 | 说明
+---|---
+before-input-external-class | 输入框前面插入内容的外部样式
+input-external-class | 输入框外部样式
+clear-btn-external-class | 清除按钮外部样式
+
+### triggerEvent
+事件 | 说明 | 携带参数
+--- | --- | ---
+bindclear | 清除按钮触发 | e.detail.value
+
+tip: 其他triggerEvent同官方

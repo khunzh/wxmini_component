@@ -1,0 +1,3 @@
+<view class='container'>
+  <input-clear value="{{value}}" placeholder="请输入" before-input="￥" before-input-external-class="before-input-external-class" bindclear="clear"></input-clear>
+</view>

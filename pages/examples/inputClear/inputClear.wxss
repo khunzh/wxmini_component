@@ -1,0 +1,3 @@
+.before-input-external-class{
+  color: red;
+}

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/examples/inputVerfication/inputVerfication"
+    "pages/examples/inputVerfication/inputVerfication",
+    "pages/examples/inputClear/inputClear"
   ],
   "window": {
     "backgroundTextStyle": "light",

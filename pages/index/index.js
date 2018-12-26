@@ -5,7 +5,8 @@ const app = getApp()
 Page({
   data: {
     examples:{
-      inputVerfication: '../examples/inputVerfication/inputVerfication'
+      inputVerfication: '../examples/inputVerfication/inputVerfication',
+      inputClear: '../examples/inputClear/inputClear'
     }
   },
   //事件处理函数
