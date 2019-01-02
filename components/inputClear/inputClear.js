@@ -72,6 +72,14 @@ Component({
     beforeInput: {
       type: String,
       value: ''
+    },
+    moneyType: { // input的额外类型, 主要用于价格的输入
+      type: Boolean,
+      value: false
+    },
+    decimalPlaces: { // 小数点后位数, 使用moneyType时使用
+      type: String,
+      value: 2
     }
   },
 
@@ -94,20 +102,23 @@ Component({
       }
     },
     _input(e) {
-      if (e.detail.value !== '') {
+      let value = e.detail.value;
+      if (value !== '') {
         if (this.data.hideClearBtn) {
           this._hideClearBtn(false);
         }
       } else {
         this._hideClearBtn(true);
       }
-      this.setData({
-        value: e.detail.value
-      })
+      // 小数点后两位验证
+      if (this.data.moneyType) {
+        const reg = new RegExp(`^(\\d*\\.\\d{0,${this.data.decimalPlaces}})[\\.\\d]*$`);
+        value = value.replace(reg, '$1');
+      }
       this.triggerEvent('input', {
-        value: e.detail.value
+        value: value
       });
-
+      return value;
     },
     _focus(e) {
       const event = {

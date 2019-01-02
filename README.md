@@ -37,8 +37,11 @@ binddone | 输入完后触发 | e.detail.value携带输入的内容
 属性 | 说明 | 类型 | 默认 | 必须
 ---|---|---|---|---
 brforeInput | 在输入框前面插入的内容 | String | '' | 否
+moneyType | 是否为价格类型的 |　Boolean | false | 否
+decimalPlaces | 小数点后后保留尾数 | String | 2 | 否
 
 tip: 其余属性同官方input组件
+tip: moneyType和decimalPlaces结合使用,在moneyType为false的情况下, decimalPlaces无效
 
 ### externalClasses
 样式类 | 说明

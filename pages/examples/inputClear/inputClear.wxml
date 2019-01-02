@@ -1,3 +1,12 @@
 <view class='container'>
-  <input-clear value="{{value}}" placeholder="请输入" before-input="￥" before-input-external-class="before-input-external-class" bindclear="clear"></input-clear>
+  <input-clear value="{{value}}"
+               placeholder="请输入"
+               before-input-external-class="before-input-external-class"
+               bindclear="clear"></input-clear>
+  <input-clear value="{{value}}"
+               placeholder="小数点后最多两位"
+               before-input="￥"
+               type="digit"
+               money-type
+               before-input-external-class="before-input-external-class"></input-clear>
 </view>
