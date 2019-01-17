@@ -1,0 +1,46 @@
+.step-node {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-bottom: 84rpx;
+  font-size: 14px;
+  color: #999;
+}
+
+.step-node.current {
+  color: #333;
+}
+
+.step-node.current .step-dot {
+  background: red;
+}
+
+.step-node .step-time {
+  flex: 0 0 150rpx;
+  text-align: center;
+}
+
+.step-node .step-dot {
+  flex: 0 0 22rpx;
+  position: relative;
+  height: 22rpx;
+  margin-top: 6rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+}
+
+.step-status-wrap {
+  flex: 1;
+  margin-left: 10rpx;
+}
+
+.after-line {
+  position: absolute;
+  top: 30rpx;
+  left: calc(150rpx + 20rpx + 11rpx);
+  width: 2rpx;
+  height: calc(100% - 22rpx + 78rpx);
+  background: #ddd;
+  transform: translate3d(-50%, 0, 0);
+}

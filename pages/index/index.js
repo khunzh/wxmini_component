@@ -6,7 +6,8 @@ Page({
   data: {
     examples:{
       inputVerfication: '../examples/inputVerfication/inputVerfication',
-      inputClear: '../examples/inputClear/inputClear'
+      inputClear: '../examples/inputClear/inputClear',
+      steps: '../examples/steps/steps'
     }
   },
   //事件处理函数

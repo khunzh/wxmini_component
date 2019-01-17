@@ -56,3 +56,17 @@ clear-btn-external-class | 清除按钮外部样式
 bindclear | 清除按钮触发 | e.detail.value
 
 tip: 其他triggerEvent同官方
+
+## steps
+简易竖向物流步骤条
+
+### 效果图
+![inputClear](https://github.com/khunzh/wxmini_component/raw/master/exampleImgs/steps.gif)
+
+### properties
+属性 | 说明 | 类型 | 默认 | 必须
+---|---|---|---|---
+list | 步骤列表 | Array | [] | 是
+color | 当前步骤圆点颜色 |　String | 'red' | 否
+
+tips: list结构如`[{time: 'xx', status: '派送中', desc: '张某正在派送...'}]`

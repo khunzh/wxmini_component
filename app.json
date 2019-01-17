@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/examples/inputVerfication/inputVerfication",
-    "pages/examples/inputClear/inputClear"
+    "pages/examples/inputClear/inputClear",
+    "pages/examples/steps/steps"
   ],
   "window": {
     "backgroundTextStyle": "light",

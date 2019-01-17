@@ -1,0 +1,12 @@
+<!-- 简单的物流信息展示组件 -->
+<view class='step-wrap'>
+  <view wx:for="{{list}}" wx:key="{{index}}" class="step-node {{index === 0 ? 'current': ''}}">
+    <view class="step-time">{{item.time}}</view>
+    <view class="step-dot" style="background: {{index === 0 ? color : '#ddd'}}"></view>
+    <view wx:if="{{index !== list.length - 1}}" class="after-line"></view>
+    <view class="step-status-wrap">
+      <view class="step-status">{{item.status}}</view>
+      <view class="step-desc">{{item.desc}}</view>
+    </view>
+  </view>
+</view>

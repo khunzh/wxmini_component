@@ -1,0 +1,3 @@
+<view class='logistics'>
+  <steps list="{{list}}"></steps>
+</view>
